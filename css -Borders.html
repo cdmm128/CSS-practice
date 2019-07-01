@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  background-color: orange;
+  color: blue;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+/* mix的依序是上、右、下、左 */
+
+/*
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+p.seven {
+  border-style: solid;
+  border-width: 2px 10px 4px 20px;
+}
+*/
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+p.two {
+  border-style: solid;
+  border-color: green;
+}
+p.three {
+  border-style: solid;
+  border-color: red green blue yellow;
+}
+p.four {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+p.five {
+  border-style: dotted solid;
+}
+p.six {
+  border: 5px solid red;  
+}
+p.seven {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+p.normal {
+  border: 2px solid red;
+}
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align: center";>CSS Borders</h1>
+<h1>CSS Border Properties</h1>
+<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+<p><b>The following values are allowed:</b></p>
+
+<p>dotted - Defines a dotted border</p>
+<p>dashed - Defines a dashed border</p>
+<p>solid - Defines a solid border</p>
+<p>double - Defines a double border</p>
+<p>groove - Defines a 3D grooved border. The effect depends on the border-color value</p>
+<p>ridge - Defines a 3D ridged border. The effect depends on the border-color value</p>
+<p>inset - Defines a 3D inset border. The effect depends on the border-color value</p>
+<p>outset - Defines a 3D outset border. The effect depends on the border-color value</p>
+<p>none - Defines no border</p>
+<p>hidden - Defines a hidden border</p>
+<p>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+<p>
+p.dotted {border-style: dotted;}<br />
+p.dashed {border-style: dashed;}<br />
+p.solid {border-style: solid;}<br />
+p.double {border-style: double;}<br />
+p.groove {border-style: groove;}<br />
+p.ridge {border-style: ridge;}<br />
+p.inset {border-style: inset;}<br />
+p.outset {border-style: outset;}<br />
+p.none {border-style: none;}<br />
+p.hidden {border-style: hidden;}<br />
+p.mix {border-style: dotted dashed solid double;}
+</p>
+<br />
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<p>Note: None of the OTHER CSS border properties described below will have ANY effect unless the border-style property is set!</p>
+<h1>Border Width</h1>
+<p>The border-width property specifies the width of the four borders.</p>
+<p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</p>
+<p>The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+
+<p>This property specifies the width of the four borders:</p>
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<p class="four">Some text.</p>
+<p class="five">Some text.</p>
+<p class="six">Some text.</p>
+<p class="seven">Some text.</p>
+<p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+Always specify the "border-style" property to set the borders first.</p>
+
+<h1>Border Color</h1>
+<p><b>The color can be set by:</b></p>
+<p>name - specify a color name, like "red"</p>
+<p>Hex - specify a hex value, like "#ff0000"</p>
+<p>RGB - specify a RGB value, like "rgb(255,0,0)"</p>
+<p>transparent</p>
+<p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). </p>
+<p>If border-color is not set, it inherits the color of the element.</p>
+<p>This property specifies the color of the four borders:</p>
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A solid multicolor border</p>
+<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+<h1>Border - Individual Sides</h1>
+<p>From the examples above you have seen that it is possible to specify a different border for each side.</p>
+<p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+<p class="four">2 different border styles.</p>
+<p>The example above gives the same result as this:</p>
+<p class="five">2 different border styles.</p>
+
+<p>So, here is how it works:</p>
+<p>If the border-style property has four values:</p>
+<p><b>border-style: dotted solid double dashed;</b></p>
+<p>top border is dotted</p>
+<p>right border is solid</p>
+<p>bottom border is double</p>
+<p>left border is dashed</p>
+<p>If the border-style property has three values:</p>
+<p><b>border-style: dotted solid double;</b></p>
+<p>top border is dotted</p>
+<p>right and left borders are solid</p>
+<p>bottom border is double</p>
+<p>If the border-style property has two values:</p>
+<p><b>border-style: dotted solid;</b></p>
+<p>top and bottom borders are dotted</p>
+<p>right and left borders are solid</p>
+<p>If the border-style property has one value:</p>
+<p><b>border-style: dotted;</b></p>
+<p>all four borders are dotted</p>
+<p>The border-style property is used in the example above. However, it also works with border-width and border-color.</p>
+<h1>Border - Shorthand Property</h1>
+<p>As you can see from the examples above, there are many properties to consider when dealing with borders.</p>
+<p>To shorten the code, it is also possible to specify all the individual border properties in one property.</p>
+<p>The border property is a shorthand property for the following individual border properties:</p>
+<p>border-width</p>
+<p>border-style (required)</p>
+<p>border-color</p>
+<p class="six">This property is a shorthand property for border-width, border-style, and border-color.</p>
+
+<h1>Left Border</h1>
+<p class="seven">This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p>
+
+<h1>Rounded Borders</h1>
+<p>The border-radius property is used to add rounded borders to an element:</p>
+<p>This property is used to add rounded borders to an element:</p>
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p>
+<p><b>Note:</b> The border-radius property is not supported in IE8 and earlier versions.</p>
+
+<h1>More Examples</h1>
+<p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-top">All the top border properties in one declaration</a></p>
+<p>This example demonstrates a shorthand property for setting all of the properties for the top border in one declaration.</p>
+<p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-bottom-style">Set the style of the bottom border</a></p>
+<p>This example demonstrates how to set the style of the bottom border.</p>
+<p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-left-width">Set the width of the left border</a></p>
+<p>This example demonstrates how to set the width of the left border.</p>
+<p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color">Set the color of the four borders</a></p>
+<p>This example demonstrates how to set the color of the four borders. It can have from one to four colors.</p>
+<p><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_border-right-color">Set the color of the right border</a></p>
+<p>This example demonstrates how to set the color of the right border.</p>
+
+<h1>Exercise 1</h1>
+<p>Set a "4px", "dotted" border for "p".</p>
+<!--
+p {
+  border: 4px dotted;
+}
+-->
+<h1>Exercise 2</h1>
+<p>Set the border color for "p" to "red".</p>
+<!--
+p {
+  border-style: dotted;
+  border-width: 4px;
+  border-color: red;
+}
+-->
+<h1>Exercise 3</h1>
+<p>Change the 3 border properties, so that they only show the border on the top side.</p>
+<!--
+p {
+  border-top: dotted 4px red;
+}
+-->
+<h1>Exercise 4</h1>
+<p>With the border property: Set the border for "p" to "10px", "solid" and "green".</p>
+<!--
+p {
+  border: 10px solid green;
+}
+-->
+
+<h1>All CSS Border Properties</h1>
+<p><a href="https://www.w3schools.com/cssref/pr_border.asp">border</a>----Sets all the border properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-bottom.asp">border-bottom</a>----	Sets all the bottom border properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-bottom_color.asp">border-bottom-color</a>----	Sets the color of the bottom border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-bottom_style.asp">border-bottom-style</a>----	Sets the style of the bottom border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-bottom_width.asp">border-bottom-width</a>----	Sets the width of the bottom border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-color.asp">border-color	Sets</a>---- the color of the four borders</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-left.asp">border-left</a>----	Sets all the left border properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-left_color.asp">border-left-color</a>----	Sets the color of the left border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-left_style.asp">border-left-style</a>----	Sets the style of the left border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-left_width.asp">border-left-width</a>----	Sets the width of the left border</p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a>----	Sets all the four border-*-radius properties for rounded corners</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-right.asp">border-right</a>----	Sets all the right border properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-right_color.asp">border-right-color</a>----	Sets the color of the right border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-right_style.asp">border-right-style</a>----	Sets the style of the right border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-right_width.asp">border-right-width</a>----	Sets the width of the right border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-style.asp">border-style</a>----	Sets the style of the four borders</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-top.asp">border-top</a>----	Sets all the top border properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-top_color.asp">border-top-color</a>----	Sets the color of the top border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-top_style.asp">border-top-style</a>----	Sets the style of the top border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-top_width.asp">border-top-width</a>----	Sets the width of the top border</p>
+<p><a href="https://www.w3schools.com/cssref/pr_border-width.asp">border-width</a>----	Sets the width of the four borders</p>
+
+</body>
+</html>

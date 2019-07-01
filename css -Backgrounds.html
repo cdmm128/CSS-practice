@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFJgJwd9BHvVcm2OrJ7n9YNzGVBn7zVpBe5B9UlzinQEjzSuT");
+  background-repeat: repeat-x;	
+} 		
+repeat-x or repeat-y 表示水平複製或垂直複製
+*/
+/*
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFJgJwd9BHvVcm2OrJ7n9YNzGVBn7zVpBe5B9UlzinQEjzSuT");
+  background-repeat: no-repeat;
+}
+不重複
+*/
+/*
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFJgJwd9BHvVcm2OrJ7n9YNzGVBn7zVpBe5B9UlzinQEjzSuT");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 350px;
+}
+不重複，在右上角，與右方元素距 350px
+*/
+/*
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFJgJwd9BHvVcm2OrJ7n9YNzGVBn7zVpBe5B9UlzinQEjzSuT");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 350px;
+  background-attachment: fixed;
+}
+fixed 圖一直在右上不會隨著捲動消失，scroll 會消失。
+*/
+body {
+  background: #ffffff url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFJgJwd9BHvVcm2OrJ7n9YNzGVBn7zVpBe5B9UlzinQEjzSuT") no-repeat right top;
+  margin-right: 350px;
+  background-attachment: fixed;
+}
+/*
+縮短程式碼
+*/
+p.large {
+  font-size: 400%;
+}
+p.center {
+  text-align: center;
+  background-color: orange;
+  color: purple;
+}
+#text1 {
+  font-size: 250%;
+  color: gray;
+}
+p.mess {
+  background-color: rgb(220, 220, 220);
+  color: DodgerBlue;
+}
+h1 {
+  background-color: green;
+}
+div {
+  background-color: lightblue;
+}
+p {
+  background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+<p class="center large">CSS Backgrounds</p>
+<p class="mess">The CSS background properties are used to define the background effects for elements.</p>
+<p class="mess">CSS background properties:</p>
+<p class="mess">background-color</p>
+<p class="mess">background-image</p>
+<p class="mess">background-repeat</p>
+<p class="mess">background-attachment</p>
+<p class="mess">background-position</p>
+<p id="text1">Background Color</p>
+<p>
+The <p style="color:red;">background-color <p style="color:black">property specifies the background color of an element.
+</p>
+<p>With CSS, a color is most often specified by:</p>
+<p>a valid color name - like "red"</p>
+<p>a HEX value - like "#ff0000"</p>
+<p>an RGB value - like "rgb(255,0,0)"</p>
+<p>
+Look at CSS Color Values for a complete list of possible color values.
+</p>
+<p>With CSS, a color is most often specified by:</p>
+<p>a valid color name - like "red"</p>
+<p>a HEX value - like "#ff0000"</p>
+<p>an RGB value - like "rgb(255,0,0)"</p>
+<p>Look at <a href="https://www.w3schools.com/cssref/css_colors_legal.asp">CSS Color Values</a> for a complete list of possible color values.</p>
+<h1>Css background-color example!</h1>
+<div>
+This is a text inside a div element.
+<p>This paragraph has its own background color.</p>
+We are still in the div element.
+</div>
+<p id="text1">Background Image</p>
+<p>The background-image property specifies an image to use as the background of an element.</p>
+<p>By default, the image is repeated so it covers the entire element.</p>
+<p>This example shows a bad combination of text and background image. The text is hardly readable: </p>
+<p>Note: When using a background image, use an image that does not disturb the text.</p>
+<p id="text1">Background Image - Repeat Horizontally or Vertically</p>
+<p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+<p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+<h1>
+If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+</h1>
+<p>Tip: To repeat an image vertically, set background-repeat: repeat-y;</p>
+<p id="text1">Background Image - no-repeat</p>
+<p>Showing the background image only once is also specified by the background-repeat property:</p>
+<br />
+<p>
+In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.
+</p>
+<p id="text1">Background Image - Set position</p>
+<p>
+The background-position property is used to specify the position of the background image.
+</p>
+<p>W3Schools background no-repeat, set position example.</p>
+<p>Now the background image is only shown once, and positioned away from the text.</p>
+<p>In this example we have also added a margin on the right side, so the background image will never disturb the text.</p>
+<h1>Background Image - Fixed or Scroll?</h1>
+<p>
+	The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+</p>
+<p id="text1">Background - Shorthand property</p>
+<p>
+	To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+</p>
+<p>The shorthand property for background is background.</p>
+<p>The background property is a shorthand property for specifying all the background properties in one declaration.</p>
+<p>Here, the background image is only shown once, and it is also positioned in the top-right corner.</p>
+<p>We have also added a right margin, so that the text will not write over the background image.</p>
+<p id="text1">
+	When using the shorthand property the order of the property values is:
+</p>
+<p style="color:red";>background-color</p>
+<p style="color:red";>background-image</p>
+<p style="color:red";>background-repeat</p>
+<p style="color:red";>background-attachment</p>
+<p style="color:red";>background-position</p>
+<p>It does not matter if one of the property values is missing, as long as the other ones are in this order.</p>
+<p id="text1">All CSS Background Properties</p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_background.asp">background</a>	----Sets all the background properties in one declaration</p>
+<p><a href="https://www.w3schools.com/cssref/pr_background-attachment.asp">background-attachment</a>	----Sets whether a background image is fixed or scrolls with the rest of the page</p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_background-clip.asp">background-clip</a>	----Specifies the painting area of the background</p>
+<p><a href="https://www.w3schools.com/cssref/pr_background-color.asp">background-color</a>	----Sets the background color of an element</p>
+<p><a href="https://www.w3schools.com/cssref/pr_background-image.asp">background-image</a>	----Sets the background image for an element</p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_background-origin.asp">background-origin</a>	----Specifies where the background image(s) is/are positioned</p>
+<p><a href="https://www.w3schools.com/cssref/pr_background-position.asp">background-position</a>	----Sets the starting position of a background image</p>
+<p><a href="https://www.w3schools.com/cssref/pr_background-repeat.asp">background-repeat</a>	----Sets how a background image will be repeated</p>
+<p><a href="https://www.w3schools.com/cssref/css3_pr_background-size.asp">background-size</a>	----Specifies the size of the background image(s)</p>
+<h1>Exercise 1</h1>
+<p>Set the background color for the page to "linen" and the background color for h1 to "lightblue".</p>
+<!--
+body {
+  background-color:linen;
+}
+h1 {
+  background-color:lightblue;  
+}
+-->
+<h1>Exercise 2</h1>
+<p>Set "paper.gif" as the background image of the page.</p>
+<!--
+body {
+  background-image: url("paper.gif");
+}
+-->
+<h1>Exercise 3</h1>
+<p>Set "gradient_bg_vertical.png" as the background image of the page, and repeat it vertically only.</p>
+<!--
+body {
+  background-image: url("gradient_bg_vertical.png");
+  background-repeat: repeat-y;
+}
+-->
+<h1>Exercise 4</h1>
+<p>Specify that the background image should be shown once, in the top right corner.</p>
+<!--
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+-->
+<h1>Exercise 5</h1>
+<p>Use the shorthand background property to set background image to "img_tree.png", show it once, in the top right corner.</p>
+<!--
+body {
+  background: url("img_tree.png") no-repeat top right;
+}
+-->
+</body>
+</html>
